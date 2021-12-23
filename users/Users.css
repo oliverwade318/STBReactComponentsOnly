@@ -1,0 +1,26 @@
+.userTotalWrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.sourcesWrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+.typeWrapper {
+    display: flex;
+    padding: 15px;
+}
+.userSource {
+    border-radius: 5px;
+    background: #007bff;
+    color: #fff;
+    padding: 5px 10px;
+    margin: 5px 5px;
+    height: fit-content;
+}
+.dateWrapper {
+    padding: 15px;
+    display: flex;
+    align-items: center;
+}

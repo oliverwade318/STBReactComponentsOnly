@@ -1,0 +1,74 @@
+.profileImg {
+    width: 150px;
+    height: 150px;
+    margin-top: 20px;
+    border-radius: 75px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.preview-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-file {
+    visibility: hidden;
+}
+
+.image-preview {
+    margin-top: 0;
+}
+
+.currency-wrapper {
+    flex: 1;
+}
+.currency-wrapper:first-child {
+    margin-right: 5px;
+}
+
+.currency-wrapper:last-child {
+    margin-left: 5px;
+}
+
+.tax-row {
+    justify-content: space-between;
+    padding: 5px 10px;
+}
+
+.tax-item {
+    flex: 1;
+    font-weight: bold;
+}
+
+.md-description-view, .lg-description-view {
+    display: none;
+}
+
+@media (max-width: 475px) {
+    .profileImg {
+        width: 100px;
+        height: 100px;
+        border-radius: 50px
+    }
+}
+
+@media (max-width: 991px) {
+    .md-description-view {
+        display: block;
+    }
+    .description-wrapper {
+        margin: auto;
+    }
+}
+
+@media (min-width: 992px) {
+    .lg-description-view {
+        display: block;
+    }
+    .description-wrapper {
+        margin: unset;
+    }
+}

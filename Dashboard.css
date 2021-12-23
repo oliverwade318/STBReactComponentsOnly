@@ -1,0 +1,73 @@
+.modal-margin {
+    margin-top: 120px;
+}
+
+.no-item {
+    border-top: 1px solid #DADEE3;
+    padding-top: 10px;
+}
+
+.paginationWrapper {
+    justify-content: space-between;
+    width: 100%;
+}
+
+@media (max-width: 992px) {
+    .col-order-1 {
+        order: 1;
+        margin-bottom: 20px;
+    }
+    .col-order-2 {
+        order: 2;
+    }
+}
+
+@media (max-width: 576px) {
+    [class*=col-] {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .dasboard-header {
+        margin: 0.2rem !important;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .d-mid-block {
+        display: none !important;
+    }
+    .card.app-responsive-container .card-body {
+        min-width: 635px;
+    }
+    .table-row {
+        margin-right: 0.05rem !important;
+        margin-left: 0.05rem !important;
+
+        padding-top: 0 !important;
+    }
+    .income-history-card {
+        padding: 0 !important;
+    }
+    .income-history-card>div:first-child {
+        padding: 10px 0 0 5px;
+    }
+}
+
+@media (max-width: 700px) { 
+    .card.app-responsive-container .card-body {
+        min-width: 550px;
+    }
+}
+
+@media (max-width: 600px) { 
+    .card.app-responsive-container .card-body {
+        min-width: 450px;
+    }
+}
+
+@media (max-width: 475px) {
+    .card {
+        border: 0 !important;
+    }
+}

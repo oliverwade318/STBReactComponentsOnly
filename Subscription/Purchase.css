@@ -1,0 +1,108 @@
+.braintree-dropin label {
+    display: unset;
+}
+.purchase-wrapper {
+    width: 600px;
+    margin: 0 auto;
+}
+
+.braintree-sheet {
+    border-radius: 4px;
+    border: none;
+    box-shadow: 0 0 20px 0 rgba(39,0,95,0.05);
+}
+
+.braintree-sheet__header {
+    border: none;
+}
+
+.braintree-sheet__text {
+    color: #32303B !important;
+    font-weight: bold;
+    letter-spacing: 0;
+}
+
+.braintree-form__label {
+    color: #6C6977 !important;
+    font-size: 16px !important;
+    letter-spacing: 0;
+    line-height: 19px !important;
+    margin-top: 14px !important;
+    margin-bottom: 10px !important;
+}
+
+.braintree-form__hosted-field {
+    border: 1px solid #DADEE3 !important;
+    border-radius: 4px;
+}
+
+.braintree-heading {
+    position: relative;
+    color: #32303B;
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: 0;
+}
+
+.braintree-placeholder {
+    height: 0;
+}
+
+.braintree-option {
+    height: 60px;
+    border-radius: 4px !important;
+    border: none;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 20px 0 rgba(39,0,95,0.05);
+}
+
+.braintree-option {
+    margin-bottom: 10px;
+}
+
+.braintree-large-button {
+    border-radius: 4px;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 20px 0 rgba(39,0,95,0.05);
+    color: #32303B;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 19px;
+}
+
+.braintree-large-button span {
+    border: none;
+}
+
+.purchase-button {
+    height: 50px !important;
+    width: 150px !important;
+    border-radius: 4px;
+    background: linear-gradient(318.37deg, #FFAEBF 0%, #B783FF 100%)
+}
+
+[data-braintree-id='choose-a-way-to-pay'] {
+    visibility: visible;
+    transform: unset;
+}
+
+.braintree-show-methods [data-braintree-id='methods-label'] {
+    transform: translateY(30px);
+}
+
+.loadingWrapper {
+    position: absolute;
+    left: 50%;
+    top: calc(50% - 25px);
+}
+
+.gift-email {
+    margin-top: 20px;
+}
+
+@media (max-width: 630px) {
+    .purchase-wrapper, .purchase-button {
+        width: 100% !important;
+    }
+}

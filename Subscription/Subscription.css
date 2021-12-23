@@ -1,0 +1,203 @@
+.subscription_heading {
+    color: #32303B;
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 42px;
+    margin-top: 100px;
+}
+
+.subscription_content {
+    width: 450px;
+    border-radius: 8px;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 20px 0 rgba(39,0,95,0.05);
+    padding-bottom: 25px;
+    margin: 50px auto;
+
+}
+
+.subscription_content--pricing {
+    height: 160px;
+    border-radius: 8px 8px 0 0;
+    background: linear-gradient(318.37deg, rgba(255, 174, 191, 0.3) 0%, rgba(183, 131, 255,0.3) 100%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subscription_content--pricing > p{
+    height: 82px;
+    width: 121px;
+    color: #32303B;
+    font-size: 70px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 82px;
+    text-align: center;
+
+}
+
+.subscription_content--pricing > span{
+    height: 24px;
+    width: 40px;
+    color: #32303B;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: 24px;
+    text-align: center;
+
+}
+
+.subscription_content--desc {
+    margin: 5% 0;
+}
+
+.subscription_content--desc ul {
+    list-style: none;
+    padding-left: 30px;
+}
+
+.subscription_content--desc ul li::before{
+    content: '✓';
+    display: inline-block;
+    height: 30px;
+    width: 25px;
+    background: linear-gradient(318.37deg, #FFAEBF 0%, #B783FF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}
+
+.subscription_content--desc li {
+    height: 19px;
+    color: #32303B;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 19px;
+
+    margin-bottom: 10px;
+}
+
+
+.subscription_content--switch {
+    display: flex;
+    margin-left: 55px;
+    margin-top: 30px;
+}
+
+.subscription_content--switch span {
+    color: #32303B;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 30px;
+}
+
+.subscription_content--switch span:last-child{
+    margin-left: 15px;
+}
+
+.subscription_content--switch span:first-child{
+    margin-right: 15px;
+}
+
+
+.tgl {
+    display: none;
+}
+.tgl, .tgl:after, .tgl:before, .tgl *, .tgl *:after, .tgl *:before, .tgl + .tgl-btn {
+    box-sizing: border-box;
+}
+.tgl::-moz-selection, .tgl:after::-moz-selection, .tgl:before::-moz-selection, .tgl *::-moz-selection, .tgl *:after::-moz-selection, .tgl *:before::-moz-selection, .tgl + .tgl-btn::-moz-selection {
+    background: none;
+}
+.tgl::selection, .tgl:after::selection, .tgl:before::selection, .tgl *::selection, .tgl *:after::selection, .tgl *:before::selection, .tgl + .tgl-btn::selection {
+    background: none;
+}
+.tgl + .tgl-btn {
+    outline: 0;
+    display: block;
+    width: 4em;
+    height: 2em;
+    position: relative;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.tgl + .tgl-btn:after, .tgl + .tgl-btn:before {
+    position: relative;
+    display: block;
+    content: "";
+    width: 50%;
+    height: 100%;
+}
+.tgl + .tgl-btn:after {
+    left: 0;
+}
+.tgl + .tgl-btn:before {
+    display: none;
+}
+.tgl:checked + .tgl-btn:after {
+    left: 50%;
+}
+.tgl-light + .tgl-btn {
+    background: linear-gradient(318.37deg, #FFAEBF 0%, #B783FF 100%);;
+    border-radius: 2em;
+    padding: 2px;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+.tgl-light + .tgl-btn:after {
+    border-radius: 50%;
+    background: #fff;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+.tgl-light:checked + .tgl-btn {
+    background: linear-gradient(318.37deg, #FFAEBF 0%, #B783FF 100%);;
+}
+
+
+
+.subscription_content--actions {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+    margin: 0 20px;
+}
+
+.subscription_content--actions > .btn-primary {
+    height: 50px !important;
+}
+
+
+@media (max-width: 475px) {
+    .subscription {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .subscription_heading {
+        margin-top: 20px;
+    }
+    .subscription_content {
+        height: 610px;
+        width: 355px;
+
+        margin: 30px 10px;
+    }
+    .subscription_content--actions {
+        flex-direction: column;
+    }
+    .subscription_content--actions button{
+        width: 100% !important;
+        margin-bottom: 10px;
+    }
+    .subscription_content--actions button:first-child {
+        order: 2;
+    }
+}

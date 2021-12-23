@@ -1,0 +1,27 @@
+.display-wrapper p {
+  text-align: right;
+}
+.display-wrapper p:last-child {
+  flex: 1;
+}
+.current-value {
+  color: #28a745 !important;
+  white-space: nowrap;
+}
+.CircularProgressbar {
+  width: 100px;
+  height: 100px;
+}
+.CircularProgressbar-trail {
+  stroke: #f0f0f0 !important;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+
+@media (max-width: 429px) {
+  .CircularProgressbar {
+    width: 70px;
+    height: 70px;
+  }
+}
